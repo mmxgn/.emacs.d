@@ -1,5 +1,5 @@
 					; list of packages to be installed
-(setq package-list '(undo-tree plantuml-mode melancholy-theme magit markdown-mode))
+(setq package-list '(undo-tree plantuml-mode magit markdown-mode))
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -25,7 +25,6 @@
 (tool-bar-mode -1)
 
 					; Theme
-(load-theme 'melancholy t)
 (setq org-src-fontify-natively t)
 
 					; Get an undo tree
@@ -46,16 +45,15 @@
  )
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
-(require 'ox-confluence)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-export-backends '(ascii html icalendar latex md odt confluence))
+ '(org-export-backends '(ascii html icalendar latex md odt))
  '(package-selected-packages
-   '(markdown-mode magit melancholy-theme plantuml-mode undo-tree)))
+   '(markdown-mode magit plantuml-mode undo-tree)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
